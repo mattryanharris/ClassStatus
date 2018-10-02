@@ -1,0 +1,510 @@
+.landing	{
+	
+
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic);
+
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+#header {
+	background: #f8f8f8;
+	height: 56px;
+	line-height: 56px;
+	color: #75797b;
+}
+#header a.account_question {
+	margin: 0 11px 0 0;
+	text-decoration: none;
+	color: #75797b;
+}
+#header a.account_question:hover {
+	text-decoration: underline;
+}
+#header #classstatus_header_logo {
+	margin: 8px 0 0 0;
+}
+
+.banner {
+	margin: -21px 0 0 0;
+	width: 100%;
+	height: 300px;
+	background-image: image-url('landing/banner_background.png');
+	background-size: cover;
+	background-position: center center;
+	color: #ffffff;
+}
+.banner .tagline h1 {
+	font-family: 'Merriweather', serif;
+	font-size: 48px;
+	font-weight: 600;
+	text-shadow: 0 2px 3px rgba(0,0,0,.54);
+	padding: 80px 0 0 0;
+}
+.banner .desc h2 {
+	font-size: 37px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+}
+
+.schools {
+	border: 1px solid #e5e5e5;
+	background: white;
+	border-radius: 5px;
+	height: 80px;
+	margin-top: -39px;
+	padding: 1px 0;
+}
+.schools .norco {
+	height: 101%;
+	text-align: center;
+	border-right: 1px solid #e5e5e5;
+	margin-right: -1px;
+}
+.schools .norco img {
+	margin: 18px 0 0 -10px;
+}
+.schools .beta_notice {
+	line-height: 78px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 18px;
+}
+.schools .beta_notice span {
+	font-weight: bold;
+	padding-right: 10px;
+	border-right: 2px solid #000;
+	margin-right: 10px;
+}
+.schools .signup {
+	height: 100%;
+	line-height: 76px;
+	text-align: center;
+}
+.schools .signup input {
+	height: 33px;
+	outline: 0;
+	background: #E8E8E8;
+	border: 1px solid #e5e5e5;
+	color: #737373;
+	margin-right: -7px;
+	padding: 0 10px 0 15px;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	display:inline-block;
+	-webkit-box-shadow: none;
+	border: 1px solid #CFCFCF;
+	box-shadow: none;
+}
+.schools .signup input:focus {
+	border-color: #66afe9;
+	outline: 0;
+}
+.schools .signup .button {
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	top: 2px;
+	border: 1px solid #CFCFCF;
+	position: relative;
+}
+
+.info {
+	margin: 25px auto 40px auto;
+}
+.info .features {
+	border-radius: 3px;
+	float: left;
+}
+.info .features nav {
+	margin: 0;
+	height: 78px;
+	border: 1px solid #e5e5e5;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	overflow: visible;
+	width: 100%;
+}
+.info .features nav .navlink {
+	text-align: center;
+	height: 100%;
+	color: #6f7c82;
+	margin: 0 -1px 0 0;
+	width: 25%;
+	border-right: 1px solid #e5e5e5;
+}
+
+.info .features nav .navlink:last-child {
+	text-align: center;
+	height: 100%;
+	color: #6f7c82;
+	margin: 0 0 0 0;
+	width: 25%;
+	border-right: 0px solid #e5e5e5;
+}
+
+.info .features nav .navlink:hover, .info .features nav .navlink.active {
+	cursor: pointer;
+}
+.info .features nav .navlink span {
+	display: block;
+}
+.info .features nav .navlink span.bold {
+	font-weight: bold;
+	margin: 15px 0 0 0;
+	color: #737677;
+}
+.info .features nav .navlink.active span.bold {
+	color: #111111;
+}
+.info .features nav .navlink .indicator {
+	width: 20px;
+	height: 20px;
+	display: none;
+	position: relative;
+	top: 12px;
+	left: 50%;
+	margin: 0 0 0 -10px;
+	z-index: 100 !important;
+	background: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+	border-right: 1px solid #e5e5e5;
+	transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+}
+.info .features nav .navlink.active .indicator {
+	display: block;
+}
+.info .features > div {
+	position: relative;
+	margin: -1px 0 0 0;
+	background-color: #f6f6f6;
+	color: #333;
+	z-index: 1;
+	border: 1px solid #e5e5e5;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	width: 100%;
+}
+.info .features > div .text {
+	padding: 25px 0 10px 39px;
+	text-align: justify;
+}
+.info .features > div .image {
+	float: right;
+	height: 100%;
+}
+.info .features > div .image img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	margin-top: -10.5%;
+	width: 45%;
+}
+.info .features > div .image img.speed {
+	margin-top: -15%;
+}
+
+.gas {
+	margin-right: -2%;
+}
+
+.info .features > div .image img.ps {
+	margin-top: -13%;
+}
+.info .features > div .text h2 {
+	font-size: 26px;
+	font-family: 'Open Sans';
+	font-weight: 600;
+}
+.info .features > div .text p {
+	margin: 0 0 15px 0;
+	font-size: 15px;
+	width: 350px;
+}
+.info .features > div {
+	display: none;
+}
+.info .features > .active, .info .features nav .navlink .active {
+	display: block;
+}
+.info .carriers {
+	text-align: center;
+	float: right;
+	background-color: #f6f6f6;
+	border-radius: 3px;
+	border: 1px solid #e5e5e5;
+	height: 307px !important;
+	width: 25% !important;
+}
+.info .carriers .title {
+	height: 78px;
+	background: #ffffff;
+	border-bottom: 1px solid #e5e5e5;
+}
+.info .carriers .title span {
+	color: #737677;
+	display: block;
+}
+.info .carriers .title span.bold {
+	font-weight: bold;
+	padding: 15px 0 0 0;
+}
+.info .carriers .carrier-img {
+	padding: 10px 0 30px 0;
+	background-image: image-url('landing/carriers.png');
+	height: 192px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.info .carriers .button {
+	margin: 0 0 19px 0;
+}
+
+#phoneimgyo img {
+	margin-top:-13.5%;
+}
+
+#psimgyo img {
+	margin-top: -12.5%;
+}
+
+hr {
+	margin: 42px 0 25px 0; /*Made a change from 80 first margin to 42 */
+	border-top: 1px solid #f5f5f5;
+	border-left: 0;
+	border-right: 0;
+	width: 100%;
+}
+
+.screenshot {
+	margin: 0 auto 70px auto;
+	height: 489px;
+	background-image: image-url('landing/screenshot.png');
+	background-position: center center;
+}
+.screenshot div {
+	margin-top: 83px;
+}
+.screenshot div h1 {
+	font-weight: 200;
+	font-size: 60px;
+	margin: 0 0 15px 0;
+}
+.screenshot div p {
+	color: #5d6368;
+	margin: 0 0 15px 0;
+	line-height: 25px;
+	text-align: justify;
+	font-size: 16px;
+}
+
+.cost p {
+	width:420px !important;
+}
+
+.signup {
+	text-align: center;
+}
+.signup h2 {
+	color: #505050;
+	font-weight: 200;
+	font-family:'Open Sans', sans-serif;
+	font-size: 40px;
+	margin: 0 0 20px 0;
+}
+.signup .button {
+	margin: 0 0 60px 0;
+	text-decoration: none !important;
+}
+
+
+#footer .social {
+	text-align: right;
+}
+#footer .social a {
+	background-image: image-url('landing/social.png');
+	width: 44px;
+	height: 44px;
+	display: inline-block;
+	margin: 19px 0 -19px 0;
+}
+
+.email {
+	 cursor: not-allowed;
+}
+
+#footer .social a.twitter {
+	background-position: -0px -0px;
+}
+#footer .social a.facebook {
+	background-position: -57px -0px;
+}
+#footer .social a.instagram {
+	background-position: -113px -0px;
+}
+
+.button {
+	display: inline-block;
+	border-radius: 3px;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+}
+.button.small {
+	width: 88px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 13px;
+	font-family:'Open Sans', sans-serif;
+}
+.button.medium {
+	width: 150px;
+	height: 33px;
+	line-height: 33px;
+	font-size: 13px;
+	font-family:'Open Sans', sans-serif;
+}
+.button.large {
+	width: 256px;
+	height: 60px;
+	border-width: 1px;
+    border-color: rgb(111, 180, 74) rgb(90, 159, 53) rgb(115, 162, 91);
+    border-style: solid;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.15);
+  	background: -webkit-linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.07) 100%) #5ebe66;
+  	background:    -moz-linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.07) 100%) #5ebe66;
+  	background:      -o-linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.07) 100%) #5ebe66;
+  	background:     -ms-linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.07) 100%) #5ebe66;
+  	background:         linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 0, 0, 0.07) 100%) #5ebe66;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.26);
+	line-height: 57px;
+	font-size: 22px;
+	font-weight: 200;
+	font-family:'Open Sans', sans-serif;
+	color: #ffffff;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+}
+.button.large:active	{
+	-moz-box-shadow:inset 0px 2px 6px 1px rgba(0,0,0,0.25);
+	box-shadow:inset 0px 2px 6px 1px rgba(0,0,0,0.25);
+}
+.button:hover {
+	cursor: pointer;
+}
+.button.inactive {
+	background: #E8E8E8;
+	border: 1px solid #e5e5e5;
+	color: #9D9D9D;
+	cursor:not-allowed;
+	border-left: 1px solid #CFCFCF;
+}
+/*
+.button.inactive:hover {
+	background: #fafafa;
+}
+*/
+
+
+@media (max-width: 1169px) {
+	.banner .tagline, .banner .desc {
+		padding: 0 40px;
+	}
+	.banner .tagline h1 {
+		padding: 80px 0 15px 0;
+		font-size: 35px;
+	}
+	.banner .desc h2 {
+		font-size: 26px;
+	}
+	.schools .beta_notice {
+		font-size: 16px;
+	}
+	.info .features > div .image img {
+		width: 270px;
+		margin-top: -80px !important;
+		right: 10px;
+	}
+	.info .carriers .carrier-img {
+		padding: 50px 0 0 0;
+		background-image: image-url('landing/carriers-small.png');
+		height: 108px;
+	}
+	.info .carriers .button {
+		margin: 20px 0 19px 0;
+	}
+}
+@media (max-width: 1023px) { 
+	.info .features {
+		width: 98% !important;
+	}
+	.info .features > div {
+		margin: 0 auto 20px auto;
+		display: block;
+		border: 0;
+		background: white;
+	}
+	.info .features > div .text {
+		padding: 2% 0;
+	}
+	.info .features > div .text p {
+		width: auto;
+	}
+	.info .carriers {
+		margin-top: 20px;
+	}
+	.signup h2 {
+		font-size: 30px;
+	}
+	#footer {
+		text-align: center;
+		height: 212px;
+		line-height: 60px;
+	}
+	#footer span:first-child {
+		display: block;
+	}
+	#footer .social {
+		text-align: center;
+	}
+	#footer .social a {
+		margin: 20px 0 -20px 10px;
+	}
+@media (max-width: 899px) { 
+	.banner .tagline h1 {
+		font-size: 30px;
+	}
+	.banner .desc h2 {
+		font-size: 21px;
+	}
+}
+@media (max-width: 549px) { 
+	.banner .tagline h1 {
+		padding: 60px 0 15px 0;
+	}
+}
+@media (max-width: 419px) { 
+	.banner .tagline h1 {
+		padding: 50px 0 15px 0;
+		font-size: 25px;
+	}
+	.banner .desc h2 {
+		font-size: 16px;
+	}
+}
+
+}
+}

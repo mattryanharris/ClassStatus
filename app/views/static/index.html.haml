@@ -1,0 +1,78 @@
+.landing
+  %section.banner
+    .tagline.center
+      %h1 Stay notified whenever a class gets cancelled
+    .desc.center
+      %h2 An easy to use app that helps you stay informed
+  %section.schools.container
+    .col2.norco.not_mobile
+      %a{href: "javascript:void('Unnamed school wishes not to be associated with providing quality services to students')", target:"_blank"}
+        =image_tag "tba.png"
+    .col6.beta_notice.not_mobile
+      %span.not_mobile Currently in Closed Beta
+      Accepting New Schools
+    .col4.mcol12.signup.container
+      %input.email.col8.mcol6{placeholder: "name@college.edu", type: "text", disabled: true}/
+      .button.small.inactive Sign Up
+  %section.info.container
+    .features.col9.mcol12
+      %nav.container.not_mobile
+        .mcol12.navlink.active{"data-info" => "profiles"}
+          %span.bold Class Profiles
+          %span Keeping you informed
+          .indicator  
+        .mcol12.navlink{"data-info" => "messaging"}
+          %span.bold Text Messaging
+          %span Better notifications
+          .indicator  
+        .mcol12.navlink{"data-info" => "cost"}
+          %span.bold Cost Effective
+          %span Perfect for students
+          .indicator  
+        .mcol12.navlink{"data-info" => "easy"}
+          %span.bold Easy to Use
+          %span Designed for the user
+          .indicator  
+      .profiles.container.active
+        .col6.mcol12.text
+          %h2 Understandable
+          %p We've made each class profile incredibly easy to understand for both professors and their students.  It provides all the important information about their class like time and class codes.
+          %p Teachers can also cancel their class straight from their class profiles as well as on their dashboards.
+        .col6.not_mobile.image
+          =image_tag "landing/browser.png"
+      .messaging.container
+        .col6.mcol12.text
+          %h2 Text Messaging
+          %p What makes ClassStatus so unique is our use of text messaging.  We go about making sure we contact you in the most effective ways possible.
+          %p Using Twilio for our users, we've made sure that there is no chance of you missing a text message from us leaving you always in the loop.
+        .col6.not_mobile.image#phoneimgyo
+          =image_tag "landing/message.png"
+      .cost.container
+        .col6.mcol12.text
+          %h2 Saving Money
+          %p One of the biggest problems when commuting to campus is the chance of showing up to a canceled class.  With ClassStatus in the mix you'll actually save money and time.
+          %p With ClassStatus texting you before you even get in the car you'll be saving gas from commuting which means you'll be saving money and creating more piece of mind.
+        .col6.not_mobile.image.gas
+          = image_tag "landing/gauge.png", style: "margin-bottom:60px", class: "speed"
+          = image_tag "landing/dial.png", style: "margin-left: -47px;-webkit-transform-origin: 241px 219px; -webkit-transform: rotate(-10deg)", class: "speed", id: "needle"
+      .easy.container
+        .col6.mcol12.text
+          %h2 Efficient
+          %p ClassStatus was designed with both students and teachers in mind.  It was made to give you the info you need quickly and effectively.
+          %p We're not adding extra bells and whistles, what you see is the essentials delivered in a way that is convenient to you.
+        .col6.not_mobile.image#psimgyo
+          = image_tag "landing/ps.png"
+    .carriers.col3.mcol12.offset 
+      .title
+        %span.bold Mobile Carriers
+        %span We'll be adding more soon
+      .carrier-img
+  %hr/
+  %section.screenshot.container.not_mobile
+    .col6
+      %h1 Get Alerts Anywhere
+      %p The problem anytime e-mail becomes involved with notifying students via class cancellations is the lack of actual notification.  Students fail to check their e-mail consistently enough for the system to succeed.
+      %p With ClassStatus, this is no longer a problem.  SMS messaging alerts students 100% of time, this leaves the students responsibility of checking e-mail gone freeing them of one less commitment.
+  %section.signup
+    %h2 Get Started Today
+    = link_to "Sign up", new_user_registration_path, class: "button active large"

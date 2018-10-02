@@ -1,0 +1,22 @@
+.container
+  = simple_form_for(@class_session) do |f|
+    = f.error_notification
+
+    .inputs
+    .form-group
+      = f.input :name
+      = f.input :class_code
+      = f.input :location
+      = f.input :start_time, ampm: true
+      = f.input :end_time, ampm: true
+      %fieldset{ id: "class_session_days" }
+      %h4 Days
+      .daylist.checkfix
+        = f.simple_fields_for :days do |d|
+          - ClassSession.days_of_week.each do |day|
+            = d.check_box day, :class => "radio-inline", checked: @class_session.days[day]
+            = d.label day, required: false
+
+    .actions
+      %button.btn.btn-default Submit
+      = link_to 'Back', class_sessions_path, class: "btn btn-default"
