@@ -1,0 +1,3 @@
+= simple_form_for @notification, url: "#{url_for @class_session}/cancel" do |f|
+  = f.input :date, as: :date
+  = f.submit "Cancel this class"

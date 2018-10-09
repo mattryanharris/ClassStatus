@@ -1,0 +1,14 @@
+.forgot
+  .container
+    = simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :post, class: :widget }) do |f|
+      .top
+        %h2 Forgot your password?
+      .middle
+        %p Enter your email below to receive reset password instructions 
+        = f.error_notification
+        .form-inputs
+          = f.input :email, :required => true, label: false, :autofocus => true, :placeholder => "Email"
+      .bottom
+        .button-group
+          = link_to "Cancel", root_path, class: "cancel btn"
+          %button.send Send

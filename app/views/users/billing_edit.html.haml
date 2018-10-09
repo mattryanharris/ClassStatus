@@ -1,0 +1,28 @@
+.billing
+  .container
+    %h1 Billing
+
+    = simple_form_for(current_user, url: billing_edit_path, html: { id: "user_billing" }) do |f|
+      = f.input :stripe_card_token, as: :hidden
+      = f.error_notification
+      .fixed
+        .inputs
+          .input.string.required.credit_card
+            = label_tag :card_number, "Credit Card Number"
+            = text_field_tag :card_number, nil, name: nil, required: true
+          .security
+            .col-md-6
+              .input.string.required.card_code
+                = label_tag :card_code, "Security Code on Card (CVV)"
+                = text_field_tag :card_code, nil, name: nil, required: true
+            .col-md-6
+              %fieldset#expiration_date
+                = label_tag :expiration_date, "Card Expiration"
+              .input.string.required.card_month
+                = select_month nil, { add_month_numbers: true, include_blank: true }, { name: nil, id: "card_month", required: true }
+                = select_year nil,  { start_year: Date.today.year, end_year: Date.today.year+15, include_blank: true }, { name: nil, id: "card_year", required: true }
+
+        .actions
+          = f.button :submit, 'Update', class:'button btn btn-success'
+          %button.btn.btn-default= link_to 'Back', edit_user_registration_path
+
